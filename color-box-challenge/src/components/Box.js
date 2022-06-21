@@ -5,7 +5,7 @@ const Box = () => {
 
   const colorSelector = () => {
     let colors = ["red", "orange", "yellow", "green", "blue", "purple"]
-    let randomNum = Math.floor(Math.random()* colors.length)
+    let randomNum = Math.floor(Math.random() * colors.length)
     setCurrentColor(colors[randomNum])
   }
 

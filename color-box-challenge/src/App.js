@@ -6,20 +6,20 @@ const App = () => {
   
   const [boxes, setBoxes] = useState([])
 
-  const addColorbox = () => {
+  const addColorBox = () => {
     setBoxes(boxes.concat(<Box />))
   }
 
-  const removeColorbox = () => {
+  const removeColorBox = () => {
     setBoxes(boxes.slice(0, boxes.length - 1))
   }
 
   return (
     <>
       <h1>Color Box Challenge</h1>
-      <button onClick={addColorbox}>Add a Colorbox</button>
-      <button onClick={removeColorbox}>Remove a Colorbox</button>
-      <div className="boxes">
+      <button onClick={addColorBox}>Add a Color Box</button>
+      <button onClick={removeColorBox}>Remove a Color Box</button>
+      <div className="color-boxes">
         {boxes.map((box, index) => {
           return <div key={index}>{box}</div>
         })}
