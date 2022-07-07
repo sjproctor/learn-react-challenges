@@ -23,7 +23,7 @@ const App = () => {
         {boxes.map((box, index) => {
           return <div key={index}>{box}</div>
         })}
-    </div>
+      </div>
     </>
   );
 }
