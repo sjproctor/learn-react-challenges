@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 const Box = () => {
-  const COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
   const [currentColor, setCurrentColor] = useState("white")
+  const colors = ["red", "orange", "yellow", "green", "blue", "purple"]
 
   const colorSelector = () => {
-    const randomNum = Math.floor(Math.random() * COLORS.length)
-    setCurrentColor(COLORS[randomNum])
+    const randomNum = Math.floor(Math.random() * colors.length)
+    setCurrentColor(colors[randomNum])
   }
 
   return (
