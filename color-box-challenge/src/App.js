@@ -21,7 +21,11 @@ const App = () => {
       <button onClick={removeColorBox}>Remove a Color Box</button>
       <div className="color-boxes">
         {boxes.map((box, index) => {
-          return <div key={index}>{box}</div>
+          return (
+            <div key={index}>
+              {box}
+            </div>
+          )
         })}
       </div>
     </>

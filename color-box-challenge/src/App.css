@@ -1,17 +1,17 @@
 * {
+  font-family: 'Amaranth', sans-serif;
   margin: 1em;
   text-align: center;
-  font-family: 'Amaranth', sans-serif;
+}
+
+.color-box {
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
 }
 
 .color-boxes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-.color-box {
-  border: 2px solid black;
-  width: 200px;
-  height: 200px;
 }
