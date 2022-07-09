@@ -17,7 +17,7 @@ const App = () => {
   const diceImages = [dice1, dice2, dice3, dice4, dice5, dice6]
 
   const rollingTheDice = () => {
-    const diceRoll = Math.ceil(Math.random() * 6)
+    const diceRoll = Math.ceil(Math.random() * diceImages.length)
     setCurrentDice(diceImages[diceRoll - 1])
     setLastRoll([...lastRoll, diceRoll])
   }
