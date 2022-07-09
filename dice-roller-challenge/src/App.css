@@ -1,0 +1,26 @@
+* {
+  margin: 1em;
+  text-align: center;
+  font-family: 'Amaranth', sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dice-square {
+  width: 190px;
+  height: 190px;
+  border: 5px solid black;
+  text-align: center;
+}
+
+.dice-image {
+  width: 200px;
+  height: 200px;
+}
+
+.dice-log {
+  flex-direction: column;
+}
