@@ -60,7 +60,7 @@ const App = () => {
     <>
       <h1>Treasure Hunt</h1>
       <h3>Counter: {counter}</h3>
-      <div id="gameBoard">
+      <div className="gameBoard">
         {board.map((value, index) => {
           return (
             <Square

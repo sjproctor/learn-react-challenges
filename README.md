@@ -5,3 +5,5 @@
 - [Pig Latin Challenge](./pig-latin-challenge/README.md)
 - [Pig Latin Student Template](./pig-latin-template/README.md)
 - [Dice Roller Challenges](./dice-roller-challenge/README.md)
+- [Food Ordering App Challenge](./food-ordering-app-challenge/README.md)
+- [Treasure Hunt](./treasure-hunt/README.md)
