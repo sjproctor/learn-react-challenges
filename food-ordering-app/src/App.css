@@ -1,0 +1,27 @@
+* {
+  margin: 1em;
+  text-align: center;
+  font-family: 'Amaranth', sans-serif;
+}
+
+main {
+  display: flex;
+}
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 1rem;
+  width: 200px;
+}
+
+.items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
