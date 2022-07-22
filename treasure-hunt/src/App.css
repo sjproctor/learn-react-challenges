@@ -1,0 +1,35 @@
+body {
+  background-image: url('./assets/island.png');
+  background-repeat: no-repeat;
+  font-family: 'Satisfy', cursive;
+  margin: 1em;
+  text-align: center;
+}
+
+button {
+  background-color: #e6faff;
+  border: 2px solid black;
+  margin: 1em;
+  padding: 1em;
+}
+
+.gameBoard {
+  background-color: #e6faff;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 385px;
+  margin: 0 auto;
+  width: 537px;
+}
+
+.square {
+  align-items: center;
+  border: 2px solid black;
+  display: flex;
+  font-size: 90px;
+  height: 125px;
+  justify-content: center;
+  width: 175px;
+}
