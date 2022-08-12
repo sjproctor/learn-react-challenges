@@ -82,17 +82,17 @@ Oday ouyay eakspay igpay atinlay? If you are scratching your head at that statem
 - Can hit the submit button
 - Can see the words that start with one or more consonants translated to Pig Latin and rendered to the page (e.g. oughthray)
 
-### Stretch Challenges
+### 🏔 Stretch Challenges
 
 - As a user, I can see a pleasant stylings on the application.
 - As a user, I can input a sentence that includes punctuation.
 - As a user, I can input a sentence that includes lower and upper case words.
 - As a user, I can see a message if I am not using the application correctly.
 
-### Developer Stretch Challenges
+### 👩‍💻 Developer Stretch Challenges
 
 - As a developer, I have a well commented application.
 - As a developer, I have well written README file with instructions on how to access my repository.
 - As a developer, my variables are all named semantically.
 - As a developer, I have refactored and efficient code.
-- As a developer, I have my application [deployed as a live website](https://www.netlify.com/).
+- As a developer, I have my application [deployed as a live website](https://render.com/docs/deploy-create-react-app).
