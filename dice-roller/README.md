@@ -6,11 +6,20 @@ When creating a project it is important to think about organization of your code
 
 ### 📚 User Stories
 
-- As a user, I can see a square box on the screen with a black border and a white background
-- As a user, I can click on the box to roll the dice and see the result of my roll in the box
-- As a user, I can see my roll logged and see the roll log continue to grow as I roll the dice
+- As a user, I can see a square box on the screen with a black border and a white background.
+- As a user, I can click on the box to roll the dice and see the result of my roll in the box.
+- As a user, I can see my roll logged and see the roll log continue to grow as I roll the dice.
 
 ### 🏔 Stretch Goals
 
-- As a user, I can see the image of a dice face when I roll the dice
-- As a user, I can click a restart button that clears my roll log
+- As a user, I can see the image of a dice face when I roll the dice.
+- As a user, I can click a restart button that clears my roll log.
+
+### 🗂 Assets
+
+- [Dice One](./assets/1-dice.png)
+- [Dice Two](./assets/2-dice.png)
+- [Dice Three](./assets/3-dice.png)
+- [Dice Four](./assets/4-dice.png)
+- [Dice Five](./assets/5-dice.png)
+- [Dice Six](./assets/6-dice.png)
