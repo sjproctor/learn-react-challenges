@@ -21,18 +21,19 @@ const App = () => {
 
   const handleGamePlay = (index) => {
     // decrements the counter for every click
+    let updateBoard = [...board]
     let count = counter - 1
     if(index === treasureLocation && !gameOver && counter > 0){
-      board[index] = "💎"
-      setBoard(board)
+      updateBoard[index] = "💎"
+      setBoard(updateBoard)
       setGameOver("winner")
     } else if(index === bombLocation && !gameOver && counter > 0){
-      board[index] = "💣"
-      setBoard(board)
+      updateBoard[index] = "💣"
+      setBoard(updateBoard)
       setGameOver("lose")
     } else if(!gameOver && counter > 0 && board[index] === "?"){
-      board[index] = "🌴"
-      setBoard(board)
+      updateBoard[index] = "🌴"
+      setBoard(updateBoard)
       setCounter(count)
     }
   }
