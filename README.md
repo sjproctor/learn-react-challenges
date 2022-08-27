@@ -11,6 +11,8 @@
 - [Listening Robot Challenge](./listening-robot/README.md)
 - [Treasure Hunt Challenge](./treasure-hunt/README.md)
 - [Tic Tac Toe](./tic-tac-toe/README.md)
+- [Fetch: IP Address API](./fetch-ip-address/README.md)
+- [Fetch: NASA API](./fetch-nasa/README.md)
 
 TODO:
 
