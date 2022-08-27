@@ -2,6 +2,7 @@ import React, { useState } from "react"
 
 const App = () => {
   const [ip, setIp] = useState("")
+
   const getIP = () => {
     fetch("https://ipapi.co/json/")
       .then((response) => response.json())
@@ -9,7 +10,6 @@ const App = () => {
       .catch((error) => console.log(error))
   }
 
-  console.log(ip)
   return (
     <>
       <h1>Find Your IP Address</h1>
