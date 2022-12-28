@@ -1,12 +1,25 @@
-import React, { useState } from 'react'
-import Square from './components/Square'
-import './App.css'
+import React, { useState } from "react"
+import Square from "./components/Square"
+import "./App.css"
 
 const App = () => {
-  
-  const [board, setBoard] = useState(["?", "?", "?", "?", "?", "?", "?", "?", "?"])
-  const [treasureLocation, setTreasureLocation] = useState(Math.floor(Math.random() * board.length))
-  const [bombLocation, setBombLocation] = useState(Math.floor(Math.random() * board.length))
+  const [board, setBoard] = useState([
+    "?",
+    "?",
+    "?",
+    "?",
+    "?",
+    "?",
+    "?",
+    "?",
+    "?"
+  ])
+  const [treasureLocation, setTreasureLocation] = useState(
+    Math.floor(Math.random() * board.length)
+  )
+  const [bombLocation, setBombLocation] = useState(
+    Math.floor(Math.random() * board.length)
+  )
   const [counter, setCounter] = useState(5)
   const [gameOver, setGameOver] = useState(false)
 
@@ -23,15 +36,15 @@ const App = () => {
     // decrements the counter for every click
     let updateBoard = [...board]
     let count = counter - 1
-    if(index === treasureLocation && !gameOver && counter > 0){
+    if (index === treasureLocation && !gameOver && counter > 0) {
       updateBoard[index] = "💎"
       setBoard(updateBoard)
       setGameOver("winner")
-    } else if(index === bombLocation && !gameOver && counter > 0){
+    } else if (index === bombLocation && !gameOver && counter > 0) {
       updateBoard[index] = "💣"
       setBoard(updateBoard)
       setGameOver("lose")
-    } else if(!gameOver && counter > 0 && board[index] === "?"){
+    } else if (!gameOver && counter > 0 && board[index] === "?") {
       updateBoard[index] = "🌴"
       setBoard(updateBoard)
       setCounter(count)
@@ -53,20 +66,20 @@ const App = () => {
               handleGamePlay={handleGamePlay}
             />
           )
-        }) }
+        })}
       </div>
-      {gameOver === "winner" &&
+      {gameOver === "winner" && (
         <div className="endGameMessage">
           <h3>Congratulations! You found the treasure! 💎</h3>
           <button onClick={restartGame}>Start Again</button>
         </div>
-      }
-      {(gameOver === "lose" || counter === 0)  &&
+      )}
+      {(gameOver === "lose" || counter === 0) && (
         <div className="endGameMessage">
           <h3>Welp, you lost! 🥺</h3>
           <button onClick={restartGame}>Start Again</button>
         </div>
-      }
+      )}
     </>
   )
 }
